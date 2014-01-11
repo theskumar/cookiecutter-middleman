@@ -1,0 +1,11 @@
+{
+    "full_name": "Saurabh Kumar",
+    "email": "hello@saurabh-kumar.com",
+    "twitter_id": "thes_kumar",
+    "github_username": "theskumar",
+    "project_name": "My awesome Project",
+    "repo_name": "my-webapp",
+    "project_short_description": "My awesome project using middleman",
+    "year": "2013",
+    "version": "0.1.0"
+}
