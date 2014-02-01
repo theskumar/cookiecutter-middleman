@@ -38,5 +38,6 @@ nosetests.xml
 output/*.html
 output/*/index.html
 
-# Sphinx
-docs/_build
+# Ruby
+*.lock
+.bundle
