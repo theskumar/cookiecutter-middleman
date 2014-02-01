@@ -455,7 +455,7 @@ window.Modernizr = (function( window, document, undefined ) {
         if(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
           bool = true;
         } else {
-          injectElementWithStyles(['@media (',prefixes.join('touch-enabled),('),mod,')','{#modernizr{top:9px;position:absolute}}'].join(''), function( node ) {
+          injectElementWithStyles(['@media (',prefixes.join('touch-enabled),('),mod,')','{ #modernizr{top:9px;position:absolute}}'].join(''), function( node ) {
             bool = node.offsetTop === 9;
           });
         }
