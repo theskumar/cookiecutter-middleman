@@ -1,3 +1,4 @@
+{# raw #}
 /*!
  * Modernizr v2.7.1
  * www.modernizr.com
@@ -1404,3 +1405,4 @@ window.Modernizr = (function( window, document, undefined ) {
     return Modernizr;
 
 })(this, this.document);
+{# endraw #}

@@ -1,9 +1,10 @@
+{# raw #}
 @import "global";
 
 //
 // @name
 // @dependencies _global.scss
-// 
+//
 
 //
 // @variables
@@ -55,7 +56,7 @@ $switch-label-outline: 1px dotted #888 !default;
 // $transition-speed - Time in ms for switch to toggle. Default: $switch-paddle-transition-speed.
 // $transition-ease - Easing function to use for animation (i.e. ease-out). Default: $switch-paddle-transition-ease.
 @mixin switch-base(
-  $transition-speed:$switch-paddle-transition-speed, 
+  $transition-speed:$switch-paddle-transition-speed,
   $transition-ease:$switch-paddle-transition-ease) {
 
   // Default position and structure for switch container.
@@ -130,7 +131,7 @@ $switch-label-outline: 1px dotted #888 !default;
 
   // Right Label alignment and position changes, including fixes for while inside a custom form
   input:last-of-type + label,
-  input:last-of-type + span + label {#{$opposite-direction}: -50%; #{$default-float}: auto; text-align: $opposite-direction; }
+  input:last-of-type + span + label { #{$opposite-direction}: -50%; #{$default-float}: auto; text-align: $opposite-direction; }
   input:last-of-type:checked + label,
   input:last-of-type:checked + span + label { #{$opposite-direction}: 0%; #{$default-float}: auto; }
 
@@ -160,8 +161,8 @@ $switch-label-outline: 1px dotted #888 !default;
 // $font-size - Font size of text in switch. Default: $switch-font-size-med.
 // $line-height - Line height of switch. Default: 2.3rem.
 @mixin switch-size(
-  $height: $switch-height-med, 
-  $font-size: $switch-font-size-med, 
+  $height: $switch-height-med,
+  $font-size: $switch-font-size-med,
   $line-height: 2.3rem) {
 
   height: rem-calc($height);
@@ -195,10 +196,10 @@ $switch-label-outline: 1px dotted #888 !default;
 // $radius - Radius to apply to switch. Default: false.
 // $base-style - Apply base styles? Default: true.
 @mixin switch-style(
-  $paddle-bg:$switch-paddle-bg, 
-  $positive-color:$switch-positive-color, 
-  $negative-color:$switch-negative-color, 
-  $radius:false, 
+  $paddle-bg:$switch-paddle-bg,
+  $positive-color:$switch-positive-color,
+  $negative-color:$switch-negative-color,
+  $radius:false,
   $base-style:true) {
 
   @if $base-style {
@@ -267,15 +268,15 @@ $switch-label-outline: 1px dotted #888 !default;
 // $radius - Radius to apply to switch. Default: false.
 // $base-style - Apply base styles? Default: true.
 @mixin switch(
-  $transition-speed: $switch-paddle-transition-speed, 
-  $transition-ease: $switch-paddle-transition-ease, 
-  $height: $switch-height-med, 
-  $font-size: $switch-font-size-med, 
-  $line-height: 2.3rem, 
-  $paddle-bg: $switch-paddle-bg, 
-  $positive-color: $switch-positive-color, 
-  $negative-color: $switch-negative-color, 
-  $radius:false, 
+  $transition-speed: $switch-paddle-transition-speed,
+  $transition-ease: $switch-paddle-transition-ease,
+  $height: $switch-height-med,
+  $font-size: $switch-font-size-med,
+  $line-height: 2.3rem,
+  $paddle-bg: $switch-paddle-bg,
+  $positive-color: $switch-positive-color,
+  $negative-color: $switch-negative-color,
+  $radius:false,
   $base-style:true) {
     @include switch-base($transition-speed, $transition-ease);
     @include switch-size($height, $font-size, $line-height);
@@ -312,3 +313,4 @@ $switch-label-outline: 1px dotted #888 !default;
       @if $experimental { @-webkit-keyframes webkitSiblingBugfix { from { position: relative; } to { position: relative; } } }
   }
 }
+{# endraw #}

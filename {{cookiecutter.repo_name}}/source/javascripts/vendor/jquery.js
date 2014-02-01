@@ -1,3 +1,4 @@
+{# raw #}
 /*!
  * jQuery JavaScript Library v2.0.3
  * http://jquery.com/
@@ -8827,3 +8828,4 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 }
 
 })( window );
+{# endraw #}
