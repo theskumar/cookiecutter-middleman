@@ -8,10 +8,11 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <meta name="description" content="">
+    <meta name="description" content="{{cookiecutter.description}}">
+    <meta name="author" content="{{cookiecutter.author}}">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= current_page.data.title || "{{cookiecutter.repo_name}}" %></title>
 
     <%= stylesheet_link_tag "normalize", "screen" %>
     <%= javascript_include_tag  "vendor/modernizr" %>
