@@ -33,12 +33,20 @@ def serve():
 
 def build():
     local('bundle exec middleman build --clean --verbose')
-
+    remove_dirs = ['js/app', 'js/plugins']
+    for dir in remove_dirs:
+        local('rm -rf {base}{dir}'.format(base=env.build_dir, dir=dir))
 
 def deploy():
     # local('rm -rf %(build_dir)s' % env)
     build()
     local('git push')
+    github()
 
+def github():
+    local('ghp-import %(build_dir)s -m "site udpated"' % env)
+    local('git push origin gh-pages')
+
+def rsync():
     rsync_project(remote_dir=env.remote_deploy_dir,
                   local_dir=env.build_dir)
