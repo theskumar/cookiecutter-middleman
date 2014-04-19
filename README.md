@@ -6,7 +6,7 @@ A [cookiecutter][cookiecutter_project] template for Middleman.
 ## Features:
 
 * [Middleman][middleman_home] compiler and server
-* [Foundation][foundation_home]
+* [Foundation 5.2][foundation_home]
 
 
 ## Usage
@@ -33,7 +33,7 @@ Create a GitHub repo and push it there:
     $ git init
     $ git add .
     $ git commit -m "first awesome commit"
-    $ git remote add origin git@github.com:pydanny/redditclone.git
+    $ git remote add origin git@github.com:theskumar/awesome_project.git
     $ git push -u origin master
 
 Now take a look at your repo. Don't forget to carefully look at the generated README. Awesome, right?

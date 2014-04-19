@@ -41,6 +41,8 @@ page "humans.txt", :layout => false
 # Reload the browser automatically whenever files change
 activate :livereload
 
+activate :autoprefixer, browsers: ['last 3 versions']
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
@@ -48,7 +50,7 @@ activate :livereload
 #   end
 # end
 
-set :css_dir, 'css'
+set :css_dir, 'scss'
 
 set :js_dir, 'js'
 
